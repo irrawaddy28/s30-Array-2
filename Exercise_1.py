@@ -31,11 +31,11 @@ def find_missing_values(A):
         if A[index] > 0:
             A[index] *= -1
 
-    result = []
+    missing = []
     for i in range(N):
         if A[i] > 0:
-            result.append(i+1)
-    return result
+            missing.append(i+1)
+    return missing
 
 def run_find_missing_values():
     tests = [([4,3,2,7,8,2,3,1], [5,6]), ([4,3,2,3,5,6,1,1], [7,8]), ([1,1], [2]), ([1], [])]
