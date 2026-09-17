@@ -121,7 +121,7 @@ def run_tests():
         res2 = find_min_max_v2(nums)
         print(f"v1 (sub-optimal) solution: (Min, Max) = {res1}")
         print(f"v2 (sub-optimal) solution: (Min, Max) = {res2}")
-        passed = (res1 == res2)
+        passed = (ans == res1 == res2)
         assert passed == True, f"Test case failed"
         print(f"Pass: {passed}")
 
